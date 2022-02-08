@@ -1,0 +1,39 @@
+para ler arquivos CSV
+
+importar o pandas as pandase usar pd.read_cvs
+
+
+.head  pega as 5 primeiras linhas por padrao
+
+
+para "pegar" colunas especificas de uma tabela utilizar
+dados[[coluna1, coluna2, coluna3]]
+
+para renomear colunas:
+primeiro fazer um dicionario:
+    novos_nomes = {
+        "nome_antigo1" : "nome_nome1"
+        "nome_antigo2" : "nome_nome2"
+        "nome_antigo3" : "nome_nome3"
+    }
+
+depois utilizar a funcao .rename(novos_nomes)
+
+
+como saber informacoes usar o .shape()
+
+
+NAO USAR TODOS OS DADOS PARA TREINAR, SE NAO NAO APRENDE E SIM MEMORIZA
+
+
+codia para a tabela utilizada  
+
+"import pandas as pd 
+
+uri='https://gist.githubusercontent.com/guilhermesilveira/2d2efa37d66b6c84a722ea627a897ced/raw/10968b997d885cbded1c92938c7a9912ba41c615/tracking.csv'
+
+dados = pd.read_csv(uri)"
+
+
+
+para que os dados sejam proporcionais otilizar o "stratify = y" que irá estratificar os dados proporcionalmente de acordo com y
